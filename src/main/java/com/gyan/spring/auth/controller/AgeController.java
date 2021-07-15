@@ -11,7 +11,7 @@ public class AgeController {
 
 	@GetMapping("/")
 	public String home() {
-		return " <h1>Welcome to Age Calculator App..</h1>\n\n<br><br>Please provide Birth Year in the url ..<br>e.g.: https://... /birth-year/2000";
+		return " <h1>Welcome to Age Calculator App.!</h1>\n\n<br><br><h5>Please provide Birth Year in the url ..</h5><br>e.g.: https://age-calculator-app.herokuapp.com/birth-year/2000";
 	}
 	
 	
