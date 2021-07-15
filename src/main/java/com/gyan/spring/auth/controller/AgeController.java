@@ -9,6 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AgeController {
 
+	@GetMapping("/")
+	public String home() {
+		return " <h1>Welcome to Age Calculator App..</h1>\n\n<br><br>Please provide Birth Year in the url ..<br>e.g.: https://... /birth-year/2000";
+	}
+	
 	
 	@GetMapping("/birth-year/{year}")
 	public int ageFinder(@PathVariable int year) {
